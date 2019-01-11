@@ -1,0 +1,39 @@
+﻿@model MobileStore.Models.Phone
+
+@{
+    ViewBag.Title = "Информация";
+}
+
+<h2>Подробная информация</h2>
+
+    <p>
+        @Html.ActionLink("Купить", "Buy", new { id = Model.Id })
+    </p>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <img src="@Model.PathToImage" />
+</p>
+<p>
+    @Html.ActionLink("Все телефоны", "PhoneList")
+</p>

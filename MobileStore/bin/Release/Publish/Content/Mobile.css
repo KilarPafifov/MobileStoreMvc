@@ -1,0 +1,33 @@
+﻿body {
+    background-color: white;
+}
+
+div#top{
+    display:table;
+}
+
+div#top2{
+    display:table-row;
+}
+
+section#main{
+    display:table-cell;
+    vertical-align:top;
+}
+
+section#aside {
+    display: table-cell;
+    vertical-align: top;
+}
+
+section#anside {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    right: -20px;
+    background-image: url('MainView/SamsungBeats.jpg');
+    background-repeat: no-repeat;
+}
+
+
+

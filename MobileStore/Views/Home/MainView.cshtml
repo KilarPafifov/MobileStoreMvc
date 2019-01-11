@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Super Mobile";
+}
+
+<head>
+    <link href="~/Content/Mobile.css" type="text/css" rel="stylesheet" />
+</head>
+
+<div>
+    <p>
+        <br />
+        <br />
+        <br />
+        <br />
+    </p>
+    <img src="/Content/MainView/SMLogo.png" />
+</div>
+   
+
+<p>
+    Москва +7(495)88*-**-08 звоните с 09:00 до 21:00
+</p>
+
+    <div id="top">
+        <div id="top2">
+            <section id="aside">
+                <h5>ЧТО УЖЕ ИЗВЕСТНО ОБ IPHONE X</h5>
+
+                <h6>"Десять", а не "Икс". За несколько дней до презентации</h6>
+                <p>
+                    Презентация iPhone 8. В сети попали едва ли не все секреты,<br />
+                    тщательно оберегаемые Apple<br />
+                    произошла масштабная утечка, и уже все знали, что именно<br />
+                    представит Apple на презентации.<br />
+                    Было известно и об iPhone X (икс).<br />
+                    Но, как выяснилось, Х в этом случае – римская цифра "десять".<br />
+                    Так, "яблочная" корпорация отметила юбилей айфона.<br />
+                    Первый телефон Apple был представлен Стивом Джобсом в 2007 году.<br />
+                </p>
+            </section>
+
+            <section id="main">
+                <a href="@Url.Action("Details", "Home", new { id = ViewBag.IPhoneX})">
+                    <img src="/Content/MainView/MainView.jpg" />
+                </a>
+            </section>
+
+            <section id="anside">
+                <a href="@Url.Action("Details", "Home", new { id = ViewBag.SamsungGalaxy9 })">
+                    <h6>Только до 10 января</h6>
+                    <p>
+                        Возможность купить Samsung Note 9 и <br />
+                        получить наушники в подарок
+                    </p>
+                </a>
+            </section>
+
+        </div>
+        <p>
+            <h2>                Скидочные товары - 30%</h2>
+        </p>
+
+        <div id="top2">
+            <section id="aside">
+                <h4>Samsung Note 9</h4>
+                <a href="@Url.Action("Details", "Home", new { id = ViewBag.SamsungNote9 })">
+                    <img src="/Content/PhoneImage/SamsungNote9.jpg" height="250" width="230" />
+                </a>
+            </section>
+
+            <section id="main">
+                <h4>IPhone 9</h4>
+                <a href="@Url.Action("Details", "Home", new { id = ViewBag.IPhone9 })">
+                    <img src="/Content/PhoneImage/IPhone9.jpg" height="250" width="230" />
+                </a>
+            </section>
+
+            <section id="anside">
+                <h4>Samsung Galaxy 9</h4>
+                <a href="@Url.Action("Details", "Home", new { id = ViewBag.SamsungGalaxy9 })">
+                    <img src="/Content/PhoneImage/SamsungGalaxy9.jpeg" height="250" width="230" />
+                </a>
+            </section>
+        </div>
+
+    </div>
+    
